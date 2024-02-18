@@ -39,7 +39,7 @@ router.get("/:cid", async (req, res) => {
   }
 });
 
-router.post("/:cid/product/:pid", async (req, res) => {
+router.put("/:cid/product/:pid", async (req, res) => {
   const cartId = req.params.cid;
   const productId = req.params.pid;
   const quantity = req.body.quantity || 1;
